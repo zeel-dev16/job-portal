@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+
+        <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                background: #00c6ff;
+                text-align: center;
+            }
+            .box {
+                background: white;
+                padding: 20px;
+                margin: 100px auto;
+                width: 300px;
+                border-radius: 10px;
+            }
+            input {
+                width: 90%;
+                padding: 8px;
+                margin: 10px;
+            }
+            button {
+                padding: 10px;
+                background: #00c6ff;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="box">
+            <h2>Login</h2>
+
+            <p style="color:red;"> {{ message }} </p>
+
+            <form method="POST">
+                <input type="email" name="email" placeholder="Enter Email"><br>
+                <input type="password" name="password" placeholder="Enter Password"><br>
+
+                <button type="submit">LOGIN</button>
+            </form>
+        </div>
+
+    </body>
+</html>
